@@ -7,10 +7,10 @@ USE Fresher_training_management;
 
 DROP TABLE IF EXISTS Trainee;
 CREATE TABLE IF NOT EXISTS Trainee (
-		Traineeid 			INT AUTO_INCREMENT,
+		Traineeid 			MEDIUMINT UNSIGNED AUTO_INCREMENT,
         Full_name 			VARCHAR(25),
         Birth_date 			DATE,
-        Gender 				ENUM('M','F','U'),
+        Gender 				ENUM('MALE','FEMALE','UNKNOWN'),
         Et_iq 				TINYINT UNSIGNED,
         Et_gmath 			TINYINT UNSIGNED,
         Et_english 			TINYINT UNSIGNED,
@@ -24,17 +24,15 @@ CHECK (0 <= Et_gmath    <= 20),
 CHECK (0 <= Et_english 	<= 50)
 );
 
-
 -- Question 2: Change the table TRAINEE to add one more field named VTI_Account 
 ALTER TABLE Trainee
 	ADD COLUMN Vti_account VARCHAR(50) NOT NULL UNIQUE;
 
 
-
 -- Exercise 2: Data Types
 DROP TABLE IF EXISTS Data_types_1;
 CREATE TABLE IF NOT EXISTS Data_types_1 (
-	ID 				INT AUTO_INCREMENT,
+	ID 				MEDIUMINT UNSIGNED AUTO_INCREMENT,
     Full_name		VARCHAR(50),
     Code_id			CHAR(5),
     Modified_date	DATE,
@@ -44,15 +42,14 @@ PRIMARY KEY (Id)
 );
 
 
-
 -- Exercise 3: Data Types (2)
 DROP TABLE IF EXISTS Data_types_2;
 CREATE TABLE IF NOT EXISTS Data_types_2 (
-	ID 				INT AUTO_INCREMENT,
+	ID 				MEDIUMINT UNSIGNED AUTO_INCREMENT,
     Full_name		VARCHAR(50),
     Modified_date	DATE,
-    Gender			SMALLINT UNSIGNED,
-    Isdeleted		SMALLINT,
+    Gender			TINYINT UNSIGNED,
+    Isdeleted		TINYINT UNSIGNED,
 
 -- KEY and CONSTRAINT
 PRIMARY KEY (Id),

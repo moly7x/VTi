@@ -1,6 +1,5 @@
 USE Adventureworks;
 
-
 -- Exercise 1: Subquery 
 -- Question 1
 SELECT 

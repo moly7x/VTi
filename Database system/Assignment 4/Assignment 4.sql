@@ -22,7 +22,7 @@ PRIMARY KEY (Employee_number)
 CREATE TABLE IF NOT EXISTS Employee_skill (
     Employee_number 	MEDIUMINT UNSIGNED,
     Skill_code 			CHAR(15),
-    Date_registered 	DATE
+    Date_registered 	DATE, UNIQUE (Employeenumer, Skill_code)
 );
 
 -- FOREIGN KEY

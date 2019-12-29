@@ -1,5 +1,6 @@
 USE Adventureworks;
 
+
 -- Exercise 1: Subquery 
 -- Question 1
 SELECT 
@@ -13,9 +14,8 @@ WHERE
         FROM
             Productsubcategory
         WHERE
-            name = 'Saddles'
+            `Name` = 'Saddles'
 	);
-
 
 -- Question 2
 SELECT 
@@ -29,9 +29,8 @@ WHERE
         FROM
             Productsubcategory
         WHERE
-            name LIKE 'BO%'
+            `Name` LIKE 'BO%'
 	);
-
 
 -- Question 3
 SELECT 
@@ -42,13 +41,12 @@ WHERE
     `Name` LIKE 'Touring%'
         AND Productnumber LIKE 'BK%'
         AND ListPrice = (SELECT 
-            MIN(`ListPrice`)
+            MIN(ListPrice)
         FROM
             Product
         WHERE
-            `name` LIKE 'Touring%'
-                AND productnumber LIKE 'BK%');
-
+            `Name` LIKE 'Touring%'
+			AND Productnumber LIKE 'BK%');
 
 
 -- Exercise 2
@@ -60,7 +58,6 @@ FROM
     Countryregion c
         JOIN
     Stateprovince s ON c.CountryRegionCode = s.CountryRegionCode;
-
 
 -- Question 2:
 SELECT 
@@ -75,7 +72,6 @@ WHERE
         OR c.`Name` LIKE ('Germany%')
 ORDER BY Country;
 
-
 -- Question 3:
 SELECT 
     so.SalesOrderID 	AS 'SalesOrderID',
@@ -87,7 +83,6 @@ FROM
     Salesorderheader so
         JOIN
     SalesPerson sp ON so.SalesPersonID = sp.SalesPersonID;
-
 
 -- Question 4:
 SELECT 

@@ -5,23 +5,23 @@ CREATE DATABASE IF NOT EXISTS Assignment_4;
 USE Assignment_4;
 
 CREATE TABLE IF NOT EXISTS Department (
-    Department_number 	INT AUTO_INCREMENT,
-    Department_name 	VARCHAR(255),
+    Department_number 	MEDIUMINT UNSIGNED AUTO_INCREMENT,
+    Department_name 	VARCHAR(50),
 -- CONSTRAINT
 PRIMARY KEY (Department_number)
 );
 
 CREATE TABLE IF NOT EXISTS Employee (
-    Employee_number 	INT AUTO_INCREMENT,
+    Employee_number 	MEDIUMINT UNSIGNED AUTO_INCREMENT,
     Employee_name 		VARCHAR(50),
-    Department_number 	INT,
+    Department_number 	MEDIUMINT UNSIGNED,
 -- CONSTRAINT
 PRIMARY KEY (Employee_number)
 );
 
 CREATE TABLE IF NOT EXISTS Employee_skill (
-    Employee_number 	INT,
-    Skill_code 			VARCHAR(15),
+    Employee_number 	MEDIUMINT UNSIGNED,
+    Skill_code 			CHAR(15),
     Date_registered 	DATE
 );
 
@@ -65,7 +65,6 @@ VALUE						(1,						'Java',				'2001-06-17'),
                             (9,						'C++',				'1989-01-14'),
                             (1,						'Pascal',			'2005-09-12');
 
-
 -- Question 3: Query all Employee who has Java skill
 SELECT 
     e.Employee_number, 
@@ -79,7 +78,6 @@ FROM
 WHERE
     Skill_code = 'java';
 
-
 -- Question 4: Query all department which has more than 3 employee
 SELECT 
     d.Department_name, 
@@ -92,7 +90,6 @@ FROM
 GROUP BY d.Department_number
 HAVING COUNT(e.Department_number) > 3;
 
-
 -- Question 5: Query all employee of each department. 
 SELECT 
     d.Department_name,
@@ -104,7 +101,6 @@ FROM
     Department d 
 		ON e.Department_number = d.Department_number
 GROUP BY d.Department_name;
-
 
 -- Question 6: Query all Employee who has more than 1 skills
 SELECT 

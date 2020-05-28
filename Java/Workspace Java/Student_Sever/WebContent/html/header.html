@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- /CSS -->
+</head>
+
+<body>
+    <!-- This is header menu-->
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <a class="navbar-brand" href="../jsp/index.jsp" target='_parent'>NEU</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="create" class="nav-link" href="../html/create.html" target='_parent'>Create Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="update" class="nav-link" href="../jsp/update.jsp" target='_parent'>Update Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="delete" class="nav-link" href="../jsp/delete.jsp" target='_parent'>Delete Students</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline" action="../jsp/search.jsp" method="GET">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search students">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- /Script -->
+</body>
+
+</html>

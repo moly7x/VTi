@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Create Students</title>
+<!-- CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<!-- /CSS -->
+</head>
+
+<body>
+	<!-- This is header menu-->
+	<iframe src="header.html" class="border-0 w-100 h-100"></iframe>
+
+	<!-- Input Student -->
+	<form action="../jsp/create.jsp" class="container">
+		<div class="row justify-content-md-center">
+			<h1>Input information's students</h1>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="form-group">
+					<label>Full Name</label> <input type="text" class="form-control"
+						name="name" placeholder="Full name">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="form-group">
+					<label>Age</label> <input type="number" class="form-control"
+						min="1" max="80" name="age" placeholder="Age">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="form-group">
+					<label>Gender</label> <select class="form-control" name="gender">
+						<option>Male</option>
+						<option>Female</option>
+						<option>Unknow</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="form-group">
+					<label>School</label> <input type="text" class="form-control"
+						name="schools" placeholder="School">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="form-group">
+					<label>Phone Number</label> <input type="text" class="form-control"
+						name="phoneNumber" placeholder="Phone Number">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="form-group">
+					<label>Address</label> <input type="text" class="form-control"
+						name="address" placeholder="Address">
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<button
+				class="btn btn-primary my-2 my-sm-0 justify-content-md-center"
+				type="submit">Submit</button>
+		</div>
+	</form>
+
+	<!-- Script -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous">
+		
+	</script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous">
+		
+	</script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous">
+		
+	</script>
+	<!-- End My Script -->
+
+	</script>
+	<!-- /Script -->
+	<!-- My Script-->
+	<script>
+		$(document).ready(function() {
+			$(".navbar-nav li").removeClass("active"); //this will remove the active class from  
+
+			//active menu items has that id 
+			$('#create').addClass('active');
+		});
+	</script>
+	<!-- End My Script -->
+	<!-- My Script-->

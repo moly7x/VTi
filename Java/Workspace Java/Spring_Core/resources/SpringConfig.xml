@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id="bikini" class="com.Spring_Core.Component.Bikini">
+	</bean>
+	<bean id="GucciAccessories" class="com.Spring_Core.Component.GucciAccessories">
+	</bean>
+	<bean id="KoreanHairStyle" class="com.Spring_Core.Component.KoreanHairStyle">
+	</bean>
+	
+	<bean id="girl" class="com.Spring_Core.Component.Girl">
+		<constructor-arg index="0" ref="bikini" />
+		<constructor-arg name="accessories" ref="GucciAccessories"/>
+		<constructor-arg index="2" ref="KoreanHairStyle"/>
+	</bean>
+</beans>

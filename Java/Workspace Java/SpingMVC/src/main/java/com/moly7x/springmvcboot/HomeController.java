@@ -1,11 +1,15 @@
 //
 package com.moly7x.springmvcboot;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.moly7x.springmvcboot.model.Ailen;
 
@@ -18,27 +22,35 @@ import com.moly7x.springmvcboot.model.Ailen;
 
 @Controller
 public class HomeController {
-	
+
 	@ModelAttribute
 	public void modelData(Model m) {
 		m.addAttribute("name", "Ailens");
 	}
-	
+
 	@RequestMapping("/")
 	public String home() {
 		return "index";
 	}
 	
-	@RequestMapping("add")
-	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, Model m) {
+	@GetMapping("getAilens")
+	public String getAilens(Model m) {
+		List<Ailen> ailens = Arrays.asList(new Ailen(101, "Moly"), new Ailen(102, "Tun"));
+		m.addAttribute("result", ailens);
 		
-		int num3 = i + j;
-		m.addAttribute("num3", num3);
-		
-		return "result";
+		return "showAilens";
 	}
-	
-	@RequestMapping("addAilen")
+
+//	@RequestMapping("add")
+//	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, Model m) {
+//		
+//		int num3 = i + j;
+//		m.addAttribute("num3", num3);
+//		
+//		return "result";
+//	}
+
+	@PostMapping("addAilen")
 	public String addAilen(@ModelAttribute("a") Ailen a) {
 		return "result";
 	}

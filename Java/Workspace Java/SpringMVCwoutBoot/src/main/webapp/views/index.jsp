@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="addAilen" method="post">
+	<form action="addAilen" method="get">
 		<label for="fnum">Enter your id: </label> 
 			<input type="text" name="aid"><br> <br>
 		<label for="fnum">Enter your name: </label> 

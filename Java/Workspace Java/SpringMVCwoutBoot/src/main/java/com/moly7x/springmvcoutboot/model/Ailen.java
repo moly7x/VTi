@@ -1,5 +1,5 @@
 //
-package com.moly7x.springmvcboot.model;
+package com.moly7x.springmvcoutboot.model;
 
 /**
  * This class is . 
@@ -10,12 +10,6 @@ package com.moly7x.springmvcboot.model;
 public class Ailen {
 	private int aid;
 	private String aname;
-	
-	public Ailen(int aid, String aname) {
-		super();
-		this.aid = aid;
-		this.aname = aname;
-	}
 	
 	public int getAid() {
 		return aid;

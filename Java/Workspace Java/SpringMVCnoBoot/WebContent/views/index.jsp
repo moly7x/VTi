@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="addAilen" method="post">
+	<form action="addAilen" method="get">
 		<label for="fnum">Enter your id: </label> 
 			<input type="text" name="aid"><br> <br>
 		<label for="fnum">Enter your name: </label> 
@@ -15,15 +15,9 @@
 		<input type="submit" value="Submit"><br> <br>
 	</form>
 	<hr>
-	<form action="getAilen" method="post">
+	<form action="getAilen" method="get">
 		<label for="fnum">Enter your id: </label> 
-			<input type="text" name="aid"><br> <br>
-		<input type="submit" value="Submit"><br> <br>
-	</form>
-	<hr>
-	<form action="getAilenByName" method="get">
-		<label for="fnum">Enter your name: </label> 
-			<input type="text" name="aname"><br> <br>
+			<input type="text" name="aid">
 		<input type="submit" value="Submit"><br> <br>
 	</form>
 </body>

@@ -1,0 +1,62 @@
+2020-08-12 11:53:15.548  INFO 17712 --- [restartedMain] c.m.springmvcboot.SpringMVCApplication   : Starting SpringMVCApplication on Moly-work with PID 17712 (E:\Passport IT\Github\Moly7x\VTI\Java\Workspace Java\SpingMVC\target\classes started by buxfo in E:\Passport IT\Github\Moly7x\VTI\Java\Workspace Java\SpingMVC)
+2020-08-12 11:53:15.549  INFO 17712 --- [restartedMain] c.m.springmvcboot.SpringMVCApplication   : No active profile set, falling back to default profiles: default
+2020-08-12 11:53:15.661  INFO 17712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-12 11:53:15.666  INFO 17712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 1 JPA repository interfaces.
+2020-08-12 11:53:15.738  INFO 17712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-12 11:53:15.739  INFO 17712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 11:53:15.739  INFO 17712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-12 11:53:15.795  INFO 17712 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-08-12 11:53:15.795  INFO 17712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 11:53:15.795  INFO 17712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 245 ms
+2020-08-12 11:53:15.825  INFO 17712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 11:53:15.827  INFO 17712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2020-08-12 11:53:15.842  INFO 17712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2020-08-12 11:53:15.844  INFO 17712 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-12 11:53:15.850  INFO 17712 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-12 11:53:15.861  WARN 17712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-12 11:53:15.864  INFO 17712 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-12 11:53:15.864  INFO 17712 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-12 11:53:15.903  INFO 17712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-12 11:53:15.937  INFO 17712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-12 11:53:15.948  INFO 17712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-12 11:53:15.949  INFO 17712 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-12 11:53:15.976  INFO 17712 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-12 11:53:15.979  INFO 17712 --- [restartedMain] c.m.springmvcboot.SpringMVCApplication   : Started SpringMVCApplication in 0.464 seconds (JVM running for 35548.277)
+2020-08-12 11:53:15.979  INFO 17712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-12 11:53:17.376  INFO 17712 --- [Thread-93] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-12 11:53:17.376  INFO 17712 --- [Thread-93] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-12 11:53:17.376  INFO 17712 --- [Thread-93] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2020-08-12 11:53:17.379  INFO 17712 --- [Thread-93] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2020-08-12 11:53:32.506  INFO 17712 --- [restartedMain] c.m.springmvcboot.SpringMVCApplication   : Starting SpringMVCApplication on Moly-work with PID 17712 (E:\Passport IT\Github\Moly7x\VTI\Java\Workspace Java\SpingMVC\target\classes started by buxfo in E:\Passport IT\Github\Moly7x\VTI\Java\Workspace Java\SpingMVC)
+2020-08-12 11:53:32.506  INFO 17712 --- [restartedMain] c.m.springmvcboot.SpringMVCApplication   : No active profile set, falling back to default profiles: default
+2020-08-12 11:53:32.621  INFO 17712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-12 11:53:32.626  INFO 17712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 1 JPA repository interfaces.
+2020-08-12 11:53:32.695  INFO 17712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-12 11:53:32.696  INFO 17712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 11:53:32.696  INFO 17712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-12 11:53:32.747  INFO 17712 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-08-12 11:53:32.748  INFO 17712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 11:53:32.748  INFO 17712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2020-08-12 11:53:32.777  INFO 17712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 11:53:32.779  INFO 17712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2020-08-12 11:53:32.795  INFO 17712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2020-08-12 11:53:32.796  INFO 17712 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-12 11:53:32.804  INFO 17712 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-12 11:53:32.812  WARN 17712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-12 11:53:32.819  INFO 17712 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-12 11:53:32.820  INFO 17712 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-12 11:53:32.858  INFO 17712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-12 11:53:32.897  INFO 17712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-12 11:53:32.907  INFO 17712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-12 11:53:32.908  INFO 17712 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-12 11:53:32.933  INFO 17712 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-12 11:53:32.935  INFO 17712 --- [restartedMain] c.m.springmvcboot.SpringMVCApplication   : Started SpringMVCApplication in 0.451 seconds (JVM running for 35565.234)
+2020-08-12 11:53:32.936  INFO 17712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-12 11:53:46.806  INFO 17712 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-12 11:53:46.806  INFO 17712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-12 11:53:46.810  INFO 17712 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-12 11:53:46.810  INFO 17712 --- [http-nio-8080-exec-2] com.moly7x.springmvcboot.LoggingAspect   : getAilens method called
+2020-08-12 11:54:32.225  INFO 17712 --- [Thread-103] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-12 11:54:32.225  INFO 17712 --- [Thread-103] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-12 11:54:32.225  INFO 17712 --- [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2020-08-12 11:54:32.227  INFO 17712 --- [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isELIgnored="false"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Result is: ${ailen}
-	<br>
-	Welcome back ${name}
+	Welcome Ailes... :3 meow finally
 </body>
 </html>
